@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+{%for contact in contacts%}
+
+    <div class="container">
+        <!-- <h1 class="text-center" style="color: white;">Feel Free to Reach out</h1> -->
+        <div class="container" style="width:900px; padding-left: 300px; display:inline-block; padding-top: 10%;" >
+            <div class="card">
+                <div class="card-body" style="flex:content; color:#3d3c3c;">
+                    <h2 class="card-title">{{contact.name}}</h2>
+                    <img src="{% static contact.image.url %}" style="width:80px; height:80px;">
+                    <br>
+                    <h4 class="card-text">{{contact.email}}</h4>
+                    <a class="btn" style="background-color: #B58586;" href="mailto:kakushavenecia@gmail.com"> Hire
+                        Me</a>
+                </div>
+                <br>
+            </div>
+        </div>
+{%endfor%}
+            <footer id="footer">
+                <div class="container">
+                    <div class="copyright" style="color:rgb(255, 255, 255); text-align: center;">
+                        &copy; Copyright <strong><span>Venecia Kakusha 2022</span></strong>
+                    </div>
+                    {%endblock%}

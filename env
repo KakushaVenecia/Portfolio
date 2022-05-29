@@ -1,0 +1,9 @@
+SECRET_KEY ='django-insecure-mm#+ds@y5_n+@!8mk8$^bbjhqopmr-s#9l=(0tkvnuf9dlb0ie'
+DEBUG=True
+DB_NAME='venportfolio'
+DB_USER='venecia'
+DB_PASSWORD='12345'
+DB_HOST='127.0.0.1'
+MODE='dev'
+ALLOWED_HOSTS='ven-portfolio.herokuapp.com'
+DISABLE_COLLECTSTATIC=1
